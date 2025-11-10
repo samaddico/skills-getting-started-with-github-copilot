@@ -142,3 +142,57 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #ddd;
+}
+
+.participants-section h5 {
+  color: #1a237e;
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+.participants-section ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.participants-section li {
+  position: relative;
+  padding: 3px 0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* Hide bullets (previously provided by :before) and style delete button */
+.participants-section li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  border: none;
+  background: transparent;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 0.95em;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+}
+
+.no-participants {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #ddd;
+  color: #666;
+  font-style: italic;
+  font-size: 0.9em;
+}
