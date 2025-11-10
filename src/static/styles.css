@@ -167,11 +167,25 @@ footer {
   font-size: 0.9em;
 }
 
-.participants-section li:before {
-  content: "•";
-  color: #1a237e;
-  position: absolute;
-  left: -15px;
+/* Hide bullets (previously provided by :before) and style delete button */
+.participants-section li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  border: none;
+  background: transparent;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 0.95em;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: rgba(198, 40, 40, 0.08);
 }
 
 .no-participants {
